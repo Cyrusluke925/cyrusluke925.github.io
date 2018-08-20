@@ -1,0 +1,486 @@
+
+
+body {
+    
+
+    background-size: cover; 
+    background-position: center; 
+    background-color: #EFF4ED; 
+    opacity: 0.9;
+  
+}
+
+
+/* -------------HEADER AND NAV--------- */
+header {
+    background-image: url('./sharp.jpg');
+    
+    height: 14em;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-family: 'Raleway';
+    color: white;
+    text-align: center;
+    margin-bottom: 3.2em;
+    font-size: 2.7em; 
+    letter-spacing: 0.2em;
+    text-shadow: white 0 0 0;
+    font-weight: bold;
+    
+}
+
+nav {
+    width: 100%;
+
+}
+.nav {
+    margin-top: 0;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+    
+}
+
+ul {
+    margin: 0;
+    width: 100%;
+}
+
+ul li {
+    
+    padding: 0.5em;
+    background-color: #79ac6e;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 1.3em;
+    font-weight: bolder;
+   
+}
+
+
+
+/* ---------------------PICTURE AND ABOUT SECTION--------------- */
+p {
+    font-family: 'Open Sans';
+    /* color: white; */
+    /* font-weight: bold; */
+    color: white;
+}
+h2 {
+    color: white;
+    font-family: 'Raleway';
+    text-align: center;
+    border-bottom: 2px solid white;
+
+}
+
+.aboutandpic {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 2em; */
+    
+}
+
+section {
+    
+    line-height: 1.8;
+    font-size: 0.9em;
+    margin: 2em 0;
+    background-color:  #79AC6E;
+    opacity: 0.9;
+    
+    
+    
+}
+.aboutMe {
+    width: 550px;
+    padding: 2em;
+
+}
+
+.profilePic {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+   
+   
+}
+.headshot {
+    width: 400px;
+    height: 400px;
+    
+} 
+
+
+
+/* CAROUSEL */
+
+ .carousel img{
+    width: 0%;
+    height: 500px;
+} 
+
+
+/* TESTIMONIALS AND SPOTIFY */
+.testimonials {
+    margin: 0 4em;
+    padding: 1em 2em 1em 2em;
+    /* margin-bottom: 2em; */
+    margin: 2em 0;
+    width: 550px;
+    max-width: 100%;
+    
+} 
+.slideshow {
+    margin: 0 4em 2em 4em;;
+}
+
+.reviewsandapi {
+    display: flex;
+   
+    justify-content: space-around;
+}
+
+.spotify {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* --------------------------FORM AREA============================== */
+.contact {
+    
+    margin: 0 4em;
+}
+
+
+form {
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    /* background-image: url('./sharp.jpg'); */
+    
+    
+} 
+
+ .info {
+    width: 70%;
+    height: 3em;
+    font-size: 16px;
+    background-color: #79ac6e;
+    border: 2px solid white;
+    margin: 2em 0;
+    opacity: 0.9;
+    
+
+    
+
+}
+
+::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+textarea {
+    width: 70%;
+    height: 15em;
+}
+
+button {
+    width: 70%;
+    height: 2em;
+    background-color: #79ac6e;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 18px;
+    border: 2px solid white;
+    opacity: 0.9;
+    margin: 1em 0 1em 0;
+    padding-bottom: 1em;;
+}
+
+button:hover {
+    color: pink;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 0.5em;
+    transition: 0.5s;
+    color: pink;
+    
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes movingPic{
+    from {
+        margin-left: 0
+    }
+
+    to {
+        margin-left: 80%;
+        margin-right: 0;
+
+    }
+}
+
+
+#hamburger {
+    display: none;
+}
+
+.smallNav{
+    display: none;
+}
+
+
+@keyframes movingForm {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-right: 4%;
+    }
+}
+
+
+.info {
+    animation: movingForm 2s;
+}
+
+#typingDog {
+    animation: movingPic 8s;
+    animation-iteration-count: infinite;
+    
+}
+
+#particles-js canvas {
+    display: block;
+  
+   
+    transform: scale(1);
+    opacity: 1;
+   
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -10;
+    top: 0;
+    top: 0;
+    left: 0;
+    height: 50em;
+    margin-bottom: 
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+    .aboutandpic {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .reviewsandapi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    a:hover {
+        font-size: 20px;
+
+    }
+
+   .testimonials {
+       width: 90%;
+   }
+
+   .aboutMe {
+       width: 90%;
+   }
+}
+
+
+
+
+.contact {
+    
+    margin-top: 5em;
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .smallNav {
+        display: block;
+    }
+    #hamburger {
+        display: flex;
+    }
+
+   
+    
+
+    a:hover{
+        font-size: 14px;
+        color: pink;
+        letter-spacing: 0;
+        transition: none
+    }
+
+    .smallLi {
+        font-size: 10px;
+        border: 1px solid white;
+        width: 100%;
+    }
+
+    .smallColumn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .contact {
+        margin: 0;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .info {
+        width: 90%;
+        margin: 1em 0;
+    }
+}
+
+
+
+.lightbox,
+.lightbox * {
+  box-sizing: border-box;
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 999;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.lightbox:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+  transition: all 500ms ease-out;
+}
+
+.lightbox img {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px black;
+  border: 5px solid white;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox:target {
+  visibility: visible;
+}
+
+.lightbox:target:before {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.lightbox:target:before {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.lightbox .close {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background: black;
+  box-shadow: 0px 0px 5px white;
+}
+
+.lightbox .close:before,
+.lightbox .close:after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 32px;
+  height: 0;
+  border-top: 2px solid white;
+  transform-origin: center;
+
+}
+
+.lightbox .close:before {
+  transform: rotate(45deg);
+}
+
+.lightbox .close:after {
+  transform: rotate(-45deg);
+}
+
+
+
